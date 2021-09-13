@@ -1,0 +1,181 @@
+body {
+    height: 100vh;
+    margin:0px;
+}
+
+header {
+    background-color: #C7DDEA;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.hello {
+    font-size: 2.7rem;
+    position: absolute;
+    z-index: 2;
+    right: 20%;
+    left: 7%;
+    top: 9%;
+    max-width: 200px;
+}
+
+p {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    width: 50%;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linktext {
+    color: black;
+    margin: 16px 0px;  
+}
+
+a:hover {
+    background-color: gray;
+    color: black;
+}
+
+main {
+    background-color:#A9A19E ;
+    height: 400px;
+    margin-top:0px;
+}
+
+.formtitle {
+    color:white;
+    margin-top:0px;
+    padding-top:20px;
+    margin-left:5%;   
+}
+
+form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 95%;
+}
+
+.label {
+    opacity: 70%;
+    margin:5px;
+    font-size: 12px;
+}
+
+textarea::placeholder {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+button {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 999rem;
+    width: 35%;
+    align-self: flex-end;
+    margin: 10px;
+    font-size:10px;
+    padding:3px;
+    padding-top:5px;
+    padding-bottom:5px;
+    height: 40px;
+    border: none;  
+}
+
+footer {
+    height: 400px;
+    background-image: url(/img/map.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+article {
+    position: absolute;
+    background-color:#FAB131 ;
+    width: 85%;
+    height: 35%;
+    bottom: 75%;
+}
+
+.visit {
+    color:white;
+    margin-bottom:5px;
+    margin-left:5%;
+}
+
+.visitus {
+    margin-left: 5%;
+}
+
+.navigator {
+    background-color: #C7DDEA;
+    border-radius: 100%;
+    position: absolute;
+    left: 90%;
+    bottom: 20%;
+}
+
+.mapicon {
+    background-color: auto;
+    color:#F17949;
+    position: absolute;
+    top: 50%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: ;
+      margin:0px;
+    }
+
+    .hello {
+        max-width: 600px;
+        position: static;
+        z-index: 2;
+        right:0;
+        left:30%;
+        top:15%;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    main {
+        display: flex; 
+    }
+
+    main h1 {
+        max-width:230px;
+    }
+
+    form {
+        width:40%;
+        margin-right:10%
+    }
+  }
